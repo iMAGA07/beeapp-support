@@ -34,15 +34,21 @@ the button to start.</p>
 <p>All of this stays on the device and is removed when you delete the app.
 Deleting the app deletes the data.</p>
 
-<h2>Network requests</h2>
-<p>To show Quran text, translations and word-by-word audio, the app requests
-them from the public <a href="https://quran.com">quran.com</a> API
-(<code>api.quran.com</code>, <code>verses.quran.com</code>). Like any web
-request, those services receive your device's IP address and can keep their own
-logs. We send them no identifier and nothing about you.</p>
+<h2>Network requests and third parties</h2>
+<p>Quran text, translations and recitation audio are provided by
+<a href="https://quran.foundation/">Quran Foundation</a> and requested from
+their public API (<code>api.quran.com</code>, <code>verses.quran.com</code>).
+Like any web request, those services receive your device's IP address and may
+keep their own logs. We send them no identifier and nothing about you: there is
+no account, so there is nothing to send.</p>
+<p>Their handling of that data is governed by Quran Foundation's own policies:
+<a href="https://api-docs.quran.foundation/legal/developer-terms/">Developer
+Terms</a>.</p>
+<p>Quran content fetched from that API is cached on your device for
+<strong>no longer than seven days</strong>, as their terms require. Expired
+content is never used and is deleted when the app next opens.</p>
 <p>The app makes no other network requests. There is no analytics SDK, no
 advertising SDK and no third-party tracker of any kind.</p>
-
 <h2>Tracking</h2>
 <p>BeeApp does not track you across apps or websites, and does not use the
 Advertising Identifier.</p>
